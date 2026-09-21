@@ -62,9 +62,18 @@ tracker.check_budget(monthly_usd=50)
 
 全部存本地 SQLite：`~/.llm-cost-guard/ledger.db`（可用 `--db` 或环境变量 `LCG_DB` 指定）。你的用量数据从不离开你的机器。
 
+### OpenAI SDK 自动记账
+
+```python
+from openai import OpenAI
+from llm_cost_guard.instrument import wrap_openai
+
+client = wrap_openai(OpenAI())   # 之后每次 chat.completions.create 自动入账
+```
+
 ## 路线图
 
-- [ ] OpenAI / Anthropic SDK 自动拦截包装器
+- [x] OpenAI / Anthropic SDK 自动拦截包装器
 - [ ] 团队模式：共享数据库 + 按 API key 归属
 - [ ] Web Dashboard（可选组件）
 - [ ] Slack / 邮件超预算通知
