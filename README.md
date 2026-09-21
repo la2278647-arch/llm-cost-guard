@@ -1,5 +1,7 @@
 # llm-cost-guard
 
+<p align="center"><img src="assets/logo.svg" width="96"></p>
+
 **Track, budget, and control your LLM API spending — across OpenAI, Anthropic, DeepSeek, and any OpenAI-compatible provider.**
 
 大模型 API 费用失控是 2025 年团队最常见的痛点之一：谁也不知道这个月烧了多少 token、哪个服务最贵、什么时候会超预算。`llm-cost-guard` 是一个零依赖（仅标准库）的 Python 工具，帮你：
