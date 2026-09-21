@@ -20,7 +20,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourname/llm-cost-guard"
+Homepage = "https://github.com/la2278647-arch/llm-cost-guard"
 
 [project.scripts]
 lcg = "llm_cost_guard.cli:main"
